@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Global Tema Düzenlemeleri === */
+
+body {
+    @apply bg-gradient-to-b from-black via-gray-900 to-purple-800 text-gray-900;
+    font-family: 'Inter', sans-serif;
+}
+
+/* === Kartlar (hesaplama panelleri) === */
+.calc-card {
+    @apply bg-gray-100 p-6 rounded-2xl shadow-lg;
+}
+
+/* Kart başlıkları (zorunlu siyah) */
+.calc-card h2,
+.calc-card h3 {
+    color: #000 !important; /* her durumda siyah */
+    font-weight: 700;
+    font-size: 1.125rem; /* text-lg */
+    margin-bottom: 1rem;
+}
+
+/* === Form Label ve Inputlar === */
+label {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+input {
+    @apply text-black bg-white border border-gray-300 rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-purple-400;
+}
+
+input::placeholder {
+    @apply text-gray-500;
+}
+
+/* === Butonlar === */
+.btn-primary {
+    @apply bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition;
+}
+
+.btn-success {
+    @apply bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition flex items-center gap-2;
+}
+
+.btn-danger {
+    @apply bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700;
+}
+
+/* === Sonuç kutuları === */
+.result-box {
+    @apply mt-4 p-3 bg-white rounded-lg shadow font-bold;
+    color: #000 !important;
+}
+
+/* === Rapor tablosu === */
+.report-table {
+    @apply w-full border-collapse bg-white rounded-lg shadow overflow-hidden;
+}
+
+.report-table th {
+    @apply bg-purple-600 text-white px-4 py-2 text-left;
+}
+
+.report-table td {
+    @apply border-t px-4 py-2;
+    color: #000 !important;
+}
+
+/* === Sidebar (sol panel) === */
+.sidebar-link {
+    @apply p-2 rounded text-white hover:bg-white/10 transition;
+}
+
+.sidebar-link-active {
+    @apply bg-white/20;
+}
+
+/* Kart başlıkları siyah */
+h2, .calc-title {
+    color: #111 !important;
+}
+
+/* Label yazıları siyah */
+label, .calc-label {
+    color: #111 !important;
+}
+
+/* Input içi yazılar siyah */
+input, .calc-input {
+    color: #111 !important;
+}
+
+/* Sonuç kısmı yazıları siyah */
+.calc-result, .result-box {
+    color: #111 !important;
+}
+
+/* Rapor tablosu içerik yazıları siyah */
+.report-table td {
+    color: #111 !important;
+}
+
+/* Basınç kartındaki fazladan efekt kaldır */
+.basinc-card {
+    background: #e5e7eb !important; /* düz gri */
+    box-shadow: none !important;   /* ekstra efekt kapalı */
+}
+
+/* Sidebar başlıkları (örn. Hesaplamalar) beyaz */
+.sidebar-title {
+    color: #fff !important;
+}
+
+/* Kart başlıkları siyah (h2, h3 vs. içinde kullanılıyor olabilir) */
+.calc-title {
+    color: #111 !important;
+}
